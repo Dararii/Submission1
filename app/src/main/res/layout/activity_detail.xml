@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imgDetailCover"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="@dimen/margin8"
+        android:contentDescription="@string/cdListMainFoodCover"
+        android:transitionName="ImageFoodTransition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgDetailCover"
+        app:layout_constraintTop_toTopOf="@id/imgDetailCover">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textDetailFoodNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/textDetailName" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textDetailFoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin8"
+                android:text="@string/hintListMainFoodName" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textDetailFoodDescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/textDetailDesc" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textDetailFoodDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin8"
+                android:lines="4"
+                android:maxLines="4"
+                android:text="@string/hintListMainFoodDesc" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDetailCarousel"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/margin8"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetailCover" />
+
+    <TextView
+        android:id="@+id/textDetailInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin8"
+        android:text="@string/textDetailDesc"
+        app:layout_constraintBottom_toTopOf="@+id/btnDetailBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvDetailCarousel" />
+
+    <Button
+        android:id="@+id/btnDetailBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnDetailBack"
+        android:layout_margin="@dimen/margin8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

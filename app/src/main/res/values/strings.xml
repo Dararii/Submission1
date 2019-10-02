@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dicoding Submission 1</string>
+    <string name="btnListMainDetails">Lihat Detail</string>
+    <string name="hintListMainFoodId">Food Id Here</string>
+    <string name="hintListMainFoodName">Food name here</string>
+    <string name="hintListMainFoodDesc">Food details here</string>
+    <string name="cdListMainFoodCover">Food image here</string>
+    <string name="textDetailName">Nama</string>
+    <string name="textDetailDesc">Deskripsi</string>
+    <string name="btnDetailBack">Kembali</string>
+    <string name="textAboutName">Darari Nur Amali</string>
+    <string name="textAboutEmail">darari7@gmail.com</string>
+</resources>
